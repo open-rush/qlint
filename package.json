@@ -1,0 +1,58 @@
+{
+  "name": "qlint",
+  "version": "0.1.0",
+  "description": "Observability query linter — helps AI agents generate correct queries for any observability platform",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "qlint": "./dist/index.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "skills"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "antlr4ts": "0.5.0-alpha.4",
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.0",
+    "@types/node": "^22.15.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^4.0.4"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krislavten/qlint"
+  },
+  "keywords": [
+    "observability",
+    "query",
+    "linter",
+    "datadog",
+    "elasticsearch",
+    "grafana",
+    "loki",
+    "ai-agent",
+    "mcp"
+  ]
+}
