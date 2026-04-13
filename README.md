@@ -4,6 +4,7 @@
 
 **Observability query linter — helps AI agents generate correct queries for any observability platform**
 
+[![npm version](https://img.shields.io/npm/v/qlint-cli.svg)](https://www.npmjs.com/package/qlint-cli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
@@ -14,13 +15,13 @@
 
 ```bash
 # Configure your platform
-npx qlint config -p octopus
+npx qlint-cli config -p octopus
 
 # Validate a query
-npx qlint validate "service = payment AND level = ERROR"
+npx qlint-cli validate "service = payment AND level = ERROR"
 
 # Build a query from structured conditions
-npx qlint build -f "service=payment" -f "level=ERROR" -f "latency>500"
+npx qlint-cli build -f "service=payment" -f "level=ERROR" -f "latency>500"
 ```
 
 ## Features
