@@ -43,7 +43,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/krislavten/qlint"
+    "url": "https://github.com/rush-open/qlint"
   },
   "keywords": [
     "observability",
